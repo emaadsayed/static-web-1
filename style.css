@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: white;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+/*----------------------- SECTION1 -------------------------*/
+
+.section-a {
+  background-image: url(img/hero-bg.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
+.main {
+  padding: 0.5em;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 1em;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  margin: 1em;
+}
+
+header a {
+  color: white;
+  font-size: 0.8em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+.title {
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: 0.8em;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1.1em;
+  border: 2px solid;
+  padding: 0.5em 1.7em;
+  font-weight: 700;
+}
+
+.one {
+  color: #00ff6c;
+  border-color: #00ff6c;
+}
+
+.one:hover,
+one:focus {
+  background-color: #00ff6c;
+  color: #232323;
+}
+
+/*----------------------- SECTION2 -------------------------*/
+
+.section-b {
+  background-color: #232323;
+  padding: 3.5em 2.5em;
+  outline: 2px solid #00ff6c;
+  outline-offset: -2em;
+  color: white;
+  position: relative;
+}
+
+.section-b h1 {
+  color: #00ff6c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.05em;
+  background-color: #232323;
+  font-size: 1.5em;
+}
+
+.mainb {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/*----------------------- SECTION3 -------------------------*/
+
+.section-c {
+  margin-top: 2em;
+  margin-bottom: 0;
+  background-color: white;
+  color: black;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section-c h1 {
+  font-weight: 300;
+  margin: 2em 0 1em;
+  position: relative;
+}
+
+.section-c h1::before{
+content: '';
+background-color: #00ff6c;
+position: absolute;
+height: 2px;
+width: 200px;
+top: -0.6em;
+left: 50%;
+transform: translateX(-50%);
+
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  padding-bottom: 2em;
+}
+
+figcaption p {
+  padding: 1em 0;
+}
+
+figure img {
+  display: block;
+}
+
+/*----------------------- SECTION4 -------------------------*/
+.section-e {
+  color: black;
+  background-color: #00ff6c;
+  padding: 2em 1em;
+}
+
+.section-e h1 {
+  margin: 0;
+  font-size: 1.7em;
+  font-weight: 800;
+}
+
+.section-e h1 span {
+  display: block;
+  font-weight: 300;
+}
+
+.two {
+  border-color: #232323;
+  color: #232323;
+  margin-top: 1em;
+  padding: 0.5em 2.5em;
+  
+}
+
+.two:hover,
+two:focus {
+  background-color: #232323;
+  color: #00ff6c;
+}
+
+/*----------------------- SECTION5 -------------------------*/
+
+footer {
+  background-color: #232323;
+
+  text-align: start;
+
+  padding: 3em 2em 0 ;
+}
+
+footer .main {
+  max-width: 1400px;
+}
+
+footer p {
+  padding-bottom: 2em;
+  margin-left: 1.2em;
+}
+
+.fleft {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 1.2em;
+
+  text-align: start;
+  line-height: 1.7em;
+}
+
+.fleft ul {
+  padding-bottom: 2em;
+}
+
+.fleft ul li{
+  margin-right: 0.8em;
+}
+
+/*----------------------- MEDIA -------------------------*/
+
+@media (min-width: 38em) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+
+  .content-a {
+    margin-top: 5em;
+  }
+
+  figure {
+    width: 50%;
+    float: left;
+  }
+
+  .section-c::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+
+  .section-a {
+    height: 27.9em;
+  }
+
+  .content-a {
+    margin-top: 7em;
+  }
+
+  
+}
+
+@media (min-width: 63em) {
+  html {
+    font-size: 1.12em;
+  }
+  .section-b {
+    width: 50%;
+    margin-top: -5em;
+  }
+
+  .mainb {
+    background-image: url(img/who-are-we.jpg);
+    padding: 3em;
+    height: 27.9em;
+    background-size: cover;
+  }
+  footer .main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .main p {
+    width: 45%;
+    margin-right: 4%;
+  }
+
+  .fleft {
+    width: 51%;
+  }
+
+  .fleft ul {
+    margin-top: -0.4em;
+  }
+
+}
+
+@media (min-width: 75em) {
+  html {
+    font-size: 1.25em;
+  }
+
+  .section-a {
+    height: 30em;
+  }
+
+  figure {
+    width: 33.33%;
+    float: left;
+  }
+
+  .section-e {
+    padding: 4em 1em;
+  }
+
+  .section-b {
+    width: 50%;
+    margin-top: -8em;
+  }
+
+  
+}
